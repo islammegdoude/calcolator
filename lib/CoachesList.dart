@@ -10,8 +10,8 @@ class Coach {
 
 class CoachListPage extends StatelessWidget {
   final List<Coach> coaches = [
-    Coach(name: 'John Doe', email: 'johndoe@example.com'),
-    Coach(name: 'Jane Smith', email: 'janesmith@example.com'),
+    Coach(name: 'Dhikra Cheriet', email: 'Dhikracheriet794@gmail.com'),
+    Coach(name: 'debeche manel', email: 'Biboua99@gmail.com'),
     // Add more coaches here
   ];
 
@@ -35,6 +35,7 @@ class CoachListPage extends StatelessWidget {
         title: Text('Sport Coaches'),
       ),
       body: ListView.builder(
+        padding: EdgeInsetsDirectional.symmetric(horizontal: 20,vertical: 20),
         itemCount: coaches.length,
         itemBuilder: (context, index) {
           final coach = coaches[index];
