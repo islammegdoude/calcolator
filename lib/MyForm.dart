@@ -1,5 +1,8 @@
+import 'package:calculator/shoose.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+
+import 'components/components.dart';
 
 class MyForm extends StatefulWidget {
   @override
@@ -82,6 +85,9 @@ class _MyFormState extends State<MyForm> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          leading: IconButton(onPressed: (){
+          navigateAndFinish(context, ShoosePage());
+        }, icon: Icon(Icons.arrow_back_ios_new_rounded)),
           centerTitle: true,
           title: Text('Calories Calcolator'),
         ),

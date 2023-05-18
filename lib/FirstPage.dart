@@ -1,8 +1,5 @@
 import 'package:calculator/shoose.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
 import 'components/components.dart';
 
 class FirstPage extends StatelessWidget {
@@ -16,9 +13,14 @@ class FirstPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           child: Column(
             children: [
+              const SizedBox(height: 40,),
               const Image(
+                fit: BoxFit.cover,
+                height: 228,
+                width: 280,
                 image: AssetImage('assets/images/firstpage.png'),
               ),
+              const SizedBox(height: 40,),
               const Text(
                 "Welcom to\nCalories Calcolator",
                 textAlign: TextAlign.center,
